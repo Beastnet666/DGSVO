@@ -66,7 +66,7 @@ header {
 .promo-card:hover { border-color: var(--accent); transform: translateY(-5px); }
 .promo-card small { color: var(--accent); letter-spacing: 1px; }
 
-.payclick-btn {
+.click-btn {
     background: var(--accent);
     color: #0f172a;
     border: none;
