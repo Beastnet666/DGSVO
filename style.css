@@ -1,0 +1,91 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f8fafc;
+    --accent: #38bdf8;
+    --warning: #fbbf24;
+    --border: #334155;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand { display: flex; align-items: center; gap: 12px; }
+.main-logo { height: 40px; width: auto; }
+.logo-text { font-weight: bold; font-size: 1.2rem; color: var(--accent); }
+
+.status-badge {
+    background: var(--warning);
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.hero { padding: 4rem 10%; text-align: center; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 0 10% 4rem;
+}
+
+.promo-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.promo-card:hover { border-color: var(--accent); transform: translateY(-5px); }
+.promo-card small { color: var(--accent); letter-spacing: 1px; }
+
+.payclick-btn {
+    background: var(--accent);
+    color: #0f172a;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+.legal-info { background: #162135; padding: 3rem 10%; margin-bottom: 3rem; }
+.qr-container { text-align: center; padding-bottom: 4rem; }
+.qr-img { width: 150px; filter: grayscale(1) brightness(1.5); margin: 20px 0; }
+
+footer { text-align: center; padding: 2rem; font-size: 0.8rem; border-top: 1px solid var(--border); }
